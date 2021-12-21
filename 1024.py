@@ -109,7 +109,7 @@ class Autoreply:
 
         match=re.findall(pat,con[theme:])
         self.match=match
-        if  config.get('Forbid',True):
+        if  config.get('Forbid',False):
             remove_list=[]
             self.getModerator()
             content=con[theme:]
